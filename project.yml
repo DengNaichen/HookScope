@@ -1,0 +1,71 @@
+name: HookScope
+options:
+  deploymentTarget:
+    macOS: '14.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    SWIFT_INCLUDE_PATHS: '$(SRCROOT)/Sources/CSQLite'
+    CODE_SIGN_IDENTITY: '-'
+    CODE_SIGN_STYLE: Manual
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+targets:
+  HookCore:
+    type: library.static
+    platform: macOS
+    sources: [Sources/HookCore]
+    settings:
+      PRODUCT_MODULE_NAME: HookCore
+  HookRecorder:
+    type: tool
+    platform: macOS
+    sources: [Sources/HookRecorder]
+    settings:
+      PRODUCT_NAME: hook-recorder
+      ENABLE_HARDENED_RUNTIME: YES
+    dependencies:
+      - target: HookCore
+      - sdk: libsqlite3.tbd
+  HookScope:
+    type: application
+    platform: macOS
+    sources: [Sources/HookScope, Resources]
+    dependencies:
+      - target: HookCore
+      - target: HookRecorder
+        link: false
+      - sdk: libsqlite3.tbd
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: local.hookscope.mac
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_CFBundleDisplayName: HookScope
+      INFOPLIST_KEY_CFBundleIconFile: AppIcon
+      INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+      ENABLE_HARDENED_RUNTIME: YES
+      ENABLE_APP_SANDBOX: NO
+      MARKETING_VERSION: 1.0.0
+      CURRENT_PROJECT_VERSION: 1
+    postBuildScripts:
+      - name: Embed Swift recorder
+        basedOnDependencyAnalysis: false
+        script: |
+          set -eu
+          mkdir -p "$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers"
+          cp "$BUILT_PRODUCTS_DIR/hook-recorder" "$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers/hook-recorder"
+          /usr/bin/codesign --force --sign "${EXPANDED_CODE_SIGN_IDENTITY:--}" --options runtime "$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers/hook-recorder"
+  HookCoreTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests/HookCoreTests]
+    dependencies:
+      - target: HookCore
+      - sdk: libsqlite3.tbd
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+schemes:
+  HookScope:
+    build:
+      targets:
+        HookScope: all
+    test:
+      targets: [HookCoreTests]

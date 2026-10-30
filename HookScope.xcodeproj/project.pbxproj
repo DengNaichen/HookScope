@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07341620526B468AF3FDBA54 /* HookCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC2368AF9E092BED351475 /* HookCoreTests.swift */; };
+		0835A846DE2E782A16501967 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E15734FA5C80788DD953F6 /* Recorder.swift */; };
+		3532EB0B57F6E7C52593582B /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2ED50C572C4BE8B4061EB /* ConnectionView.swift */; };
+		42985943F583CF3B2C9E6174 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 30939505EA4A2ED270056AF6 /* libsqlite3.tbd */; };
+		51B0A64A91466A3C0FF5B149 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DFD07B9015EFDEF355BAB443 /* AppIcon.icns */; };
+		58491E6D64E9BD819CEF4C64 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC08FB2F5A7AA830AB34D17 /* Database.swift */; };
+		6733FAB20FE931FB50D1842C /* libHookCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613C87F909DBDFE8E853852 /* libHookCore.a */; };
+		72EA09E560926190CB6DE8D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2C0AFE15ED447465AD093C /* main.swift */; };
+		7BDCBF97C056A2C778312989 /* libHookCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613C87F909DBDFE8E853852 /* libHookCore.a */; };
+		86284E976E669018AD39FBB4 /* Installation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BBAFD31ED17E7AAC30AB7 /* Installation.swift */; };
+		9E1F6411C2A825372B98771B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 30939505EA4A2ED270056AF6 /* libsqlite3.tbd */; };
+		A5239AC81EDE32096F11907F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 30939505EA4A2ED270056AF6 /* libsqlite3.tbd */; };
+		A92F36DECA86549911880FC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F29E4E7A9B0400AA28C114 /* ContentView.swift */; };
+		B5754A58FE3547F9D216032C /* HookScopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5DE41217E1DCE7C7C8203B /* HookScopeApp.swift */; };
+		DB80F5E0A6FAEC17A22E2812 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53D3C4683F09DEF9466841A /* Models.swift */; };
+		E184DCFA166938DA16EE3F5F /* libHookCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3613C87F909DBDFE8E853852 /* libHookCore.a */; };
+		F532453BC1F786902E39CC41 /* HookRecorder in Resources */ = {isa = PBXBuildFile; fileRef = B3DF2AF543C1CB15986AA0B5 /* HookRecorder */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD07DCC3BBD9D0D3E1511E37 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8711BF94AA389795EDAE5AF3 /* AppModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E99792601D61DD0D1B1191C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1665A7D489400032DAE9C7DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C61F1FF1EA768138574901;
+			remoteInfo = HookCore;
+		};
+		6656710FE099CBBD2C45360C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1665A7D489400032DAE9C7DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C61F1FF1EA768138574901;
+			remoteInfo = HookCore;
+		};
+		DC6ACE03F90F1F000FB2325A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1665A7D489400032DAE9C7DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C61F1FF1EA768138574901;
+			remoteInfo = HookCore;
+		};
+		FC8AB2A12A2EEB51F09A418E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1665A7D489400032DAE9C7DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A33774FD71D6575E991A1CB;
+			remoteInfo = HookRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E5DE41217E1DCE7C7C8203B /* HookScopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookScopeApp.swift; sourceTree = "<group>"; };
+		1B2C0AFE15ED447465AD093C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		30939505EA4A2ED270056AF6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		32D2ED50C572C4BE8B4061EB /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
+		3613C87F909DBDFE8E853852 /* libHookCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHookCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F29E4E7A9B0400AA28C114 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5FFC2368AF9E092BED351475 /* HookCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookCoreTests.swift; sourceTree = "<group>"; };
+		762BBAFD31ED17E7AAC30AB7 /* Installation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installation.swift; sourceTree = "<group>"; };
+		8711BF94AA389795EDAE5AF3 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A68DB3BA9B2C95C2AE8727FF /* HookScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DF2AF543C1CB15986AA0B5 /* HookRecorder */ = {isa = PBXFileReference; includeInIndex = 0; path = HookRecorder; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53D3C4683F09DEF9466841A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DE07852AE50F264BBA4E05FF /* HookCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HookCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD07B9015EFDEF355BAB443 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		EFC08FB2F5A7AA830AB34D17 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		F8E15734FA5C80788DD953F6 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3DC4E1E14082BDA2ECE3E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6733FAB20FE931FB50D1842C /* libHookCore.a in Frameworks */,
+				42985943F583CF3B2C9E6174 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC43E957A643634DF9CA2306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDCBF97C056A2C778312989 /* libHookCore.a in Frameworks */,
+				9E1F6411C2A825372B98771B /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA032711C5FB2E617117A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E184DCFA166938DA16EE3F5F /* libHookCore.a in Frameworks */,
+				A5239AC81EDE32096F11907F /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12C9426B26AF7D4BB1D36135 /* HookScope */ = {
+			isa = PBXGroup;
+			children = (
+				8711BF94AA389795EDAE5AF3 /* AppModel.swift */,
+				32D2ED50C572C4BE8B4061EB /* ConnectionView.swift */,
+				55F29E4E7A9B0400AA28C114 /* ContentView.swift */,
+				0E5DE41217E1DCE7C7C8203B /* HookScopeApp.swift */,
+			);
+			name = HookScope;
+			path = Sources/HookScope;
+			sourceTree = "<group>";
+		};
+		23C084FE46B2F1A4D864C6AC /* HookCore */ = {
+			isa = PBXGroup;
+			children = (
+				EFC08FB2F5A7AA830AB34D17 /* Database.swift */,
+				762BBAFD31ED17E7AAC30AB7 /* Installation.swift */,
+				D53D3C4683F09DEF9466841A /* Models.swift */,
+				F8E15734FA5C80788DD953F6 /* Recorder.swift */,
+			);
+			name = HookCore;
+			path = Sources/HookCore;
+			sourceTree = "<group>";
+		};
+		4449450FC55E780F6CE0652A = {
+			isa = PBXGroup;
+			children = (
+				23C084FE46B2F1A4D864C6AC /* HookCore */,
+				EAA20E9A4DC8E457F6C26CA0 /* HookCoreTests */,
+				EBA60226FD78DB304A6EBD98 /* HookRecorder */,
+				12C9426B26AF7D4BB1D36135 /* HookScope */,
+				D96C05B91E70C9E0EE6A2BC0 /* Resources */,
+				A9A34116DCF5D98BF7E120CC /* Frameworks */,
+				C8ACA913A5C277B4661CD982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9A34116DCF5D98BF7E120CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30939505EA4A2ED270056AF6 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8ACA913A5C277B4661CD982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE07852AE50F264BBA4E05FF /* HookCoreTests.xctest */,
+				B3DF2AF543C1CB15986AA0B5 /* HookRecorder */,
+				A68DB3BA9B2C95C2AE8727FF /* HookScope.app */,
+				3613C87F909DBDFE8E853852 /* libHookCore.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D96C05B91E70C9E0EE6A2BC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFD07B9015EFDEF355BAB443 /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EAA20E9A4DC8E457F6C26CA0 /* HookCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FFC2368AF9E092BED351475 /* HookCoreTests.swift */,
+			);
+			name = HookCoreTests;
+			path = Tests/HookCoreTests;
+			sourceTree = "<group>";
+		};
+		EBA60226FD78DB304A6EBD98 /* HookRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				1B2C0AFE15ED447465AD093C /* main.swift */,
+			);
+			name = HookRecorder;
+			path = Sources/HookRecorder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A33774FD71D6575E991A1CB /* HookRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 959E86B59DC90CAB897A4520 /* Build configuration list for PBXNativeTarget "HookRecorder" */;
+			buildPhases = (
+				713CAB9966D897A24C48CA74 /* Sources */,
+				EEA032711C5FB2E617117A14 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E596B4D623122FE7B4182032 /* PBXTargetDependency */,
+			);
+			name = HookRecorder;
+			packageProductDependencies = (
+			);
+			productName = HookRecorder;
+			productReference = B3DF2AF543C1CB15986AA0B5 /* HookRecorder */;
+			productType = "com.apple.product-type.tool";
+		};
+		70C61F1FF1EA768138574901 /* HookCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E4960455D660AA0319F730 /* Build configuration list for PBXNativeTarget "HookCore" */;
+			buildPhases = (
+				EEA64C818AFDB071E52ABB99 /* Sources */,
+				0AE22C2A0D66E4848F7CAE26 /* Copy Swift Objective-C Interface Header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HookCore;
+			packageProductDependencies = (
+			);
+			productName = HookCore;
+			productReference = 3613C87F909DBDFE8E853852 /* libHookCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9804FFCED52FD7B73E1F6804 /* HookScope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 977C23435175C89640ED301E /* Build configuration list for PBXNativeTarget "HookScope" */;
+			buildPhases = (
+				FF7B97E18849411B0907D8BC /* Sources */,
+				7B3C6C9E9663BD5862668EE9 /* Resources */,
+				EC43E957A643634DF9CA2306 /* Frameworks */,
+				E6376F2E3619D4D54FAD0498 /* Embed Swift recorder */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011C0885953AE5271966D475 /* PBXTargetDependency */,
+				8962CA9C46B41B1F5DF1FDD8 /* PBXTargetDependency */,
+			);
+			name = HookScope;
+			packageProductDependencies = (
+			);
+			productName = HookScope;
+			productReference = A68DB3BA9B2C95C2AE8727FF /* HookScope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF2709E32A1190D26AE7236A /* HookCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E791F6FDBD0054C816D8761 /* Build configuration list for PBXNativeTarget "HookCoreTests" */;
+			buildPhases = (
+				1FFC93BD550F323766A44CD9 /* Sources */,
+				B3DC4E1E14082BDA2ECE3E31 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4BF2F4257DA1848989E9212 /* PBXTargetDependency */,
+			);
+			name = HookCoreTests;
+			packageProductDependencies = (
+			);
+			productName = HookCoreTests;
+			productReference = DE07852AE50F264BBA4E05FF /* HookCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1665A7D489400032DAE9C7DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1A33774FD71D6575E991A1CB = {
+						ProvisioningStyle = Manual;
+					};
+					70C61F1FF1EA768138574901 = {
+						ProvisioningStyle = Manual;
+					};
+					9804FFCED52FD7B73E1F6804 = {
+						ProvisioningStyle = Manual;
+					};
+					BF2709E32A1190D26AE7236A = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = E0E1199ACE82DF408E1933F1 /* Build configuration list for PBXProject "HookScope" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4449450FC55E780F6CE0652A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C8ACA913A5C277B4661CD982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70C61F1FF1EA768138574901 /* HookCore */,
+				1A33774FD71D6575E991A1CB /* HookRecorder */,
+				9804FFCED52FD7B73E1F6804 /* HookScope */,
+				BF2709E32A1190D26AE7236A /* HookCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B3C6C9E9663BD5862668EE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B0A64A91466A3C0FF5B149 /* AppIcon.icns in Resources */,
+				F532453BC1F786902E39CC41 /* HookRecorder in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AE22C2A0D66E4848F7CAE26 /* Copy Swift Objective-C Interface Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(DERIVED_SOURCES_DIR)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			name = "Copy Swift Objective-C Interface Header";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/include/$(PRODUCT_MODULE_NAME)/$(SWIFT_OBJC_INTERFACE_HEADER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto \"${SCRIPT_INPUT_FILE_0}\" \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+		E6376F2E3619D4D54FAD0498 /* Embed Swift recorder */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Swift recorder";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\nmkdir -p \"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers\"\ncp \"$BUILT_PRODUCTS_DIR/hook-recorder\" \"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers/hook-recorder\"\n/usr/bin/codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY:--}\" --options runtime \"$TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/Helpers/hook-recorder\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FFC93BD550F323766A44CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07341620526B468AF3FDBA54 /* HookCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		713CAB9966D897A24C48CA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EA09E560926190CB6DE8D8 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA64C818AFDB071E52ABB99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58491E6D64E9BD819CEF4C64 /* Database.swift in Sources */,
+				86284E976E669018AD39FBB4 /* Installation.swift in Sources */,
+				DB80F5E0A6FAEC17A22E2812 /* Models.swift in Sources */,
+				0835A846DE2E782A16501967 /* Recorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7B97E18849411B0907D8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD07DCC3BBD9D0D3E1511E37 /* AppModel.swift in Sources */,
+				3532EB0B57F6E7C52593582B /* ConnectionView.swift in Sources */,
+				A92F36DECA86549911880FC2 /* ContentView.swift in Sources */,
+				B5754A58FE3547F9D216032C /* HookScopeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		011C0885953AE5271966D475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70C61F1FF1EA768138574901 /* HookCore */;
+			targetProxy = DC6ACE03F90F1F000FB2325A /* PBXContainerItemProxy */;
+		};
+		8962CA9C46B41B1F5DF1FDD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A33774FD71D6575E991A1CB /* HookRecorder */;
+			targetProxy = FC8AB2A12A2EEB51F09A418E /* PBXContainerItemProxy */;
+		};
+		C4BF2F4257DA1848989E9212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70C61F1FF1EA768138574901 /* HookCore */;
+			targetProxy = 2E99792601D61DD0D1B1191C /* PBXContainerItemProxy */;
+		};
+		E596B4D623122FE7B4182032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70C61F1FF1EA768138574901 /* HookCore */;
+			targetProxy = 6656710FE099CBBD2C45360C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		62AEFE333BAE1F2FEA2D77A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HookScope;
+				INFOPLIST_KEY_CFBundleIconFile = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.hookscope.mac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		62DA4156910D8BBA7C623867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CSQLite";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6AF993BBA0E9F80BD2FCCEC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Sources/CSQLite";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		91C6A828E6FE5FC5B32ABF62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HookScope;
+				INFOPLIST_KEY_CFBundleIconFile = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.hookscope.mac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9ABA6F311D89D924C835626C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_MODULE_NAME = HookCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AEDF20050B121A799D015ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "hook-recorder";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC1066748F79177CADCE5D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E479373BA4F6F2559B53FC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EC457BCBB6566BF4E87E4073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_MODULE_NAME = HookCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F8AD667BEBC4D8A902860860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "hook-recorder";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E791F6FDBD0054C816D8761 /* Build configuration list for PBXNativeTarget "HookCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E479373BA4F6F2559B53FC61 /* Debug */,
+				DC1066748F79177CADCE5D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		959E86B59DC90CAB897A4520 /* Build configuration list for PBXNativeTarget "HookRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDF20050B121A799D015ADB /* Debug */,
+				F8AD667BEBC4D8A902860860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		977C23435175C89640ED301E /* Build configuration list for PBXNativeTarget "HookScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62AEFE333BAE1F2FEA2D77A2 /* Debug */,
+				91C6A828E6FE5FC5B32ABF62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3E4960455D660AA0319F730 /* Build configuration list for PBXNativeTarget "HookCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC457BCBB6566BF4E87E4073 /* Debug */,
+				9ABA6F311D89D924C835626C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E0E1199ACE82DF408E1933F1 /* Build configuration list for PBXProject "HookScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62DA4156910D8BBA7C623867 /* Debug */,
+				6AF993BBA0E9F80BD2FCCEC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1665A7D489400032DAE9C7DF /* Project object */;
+}
